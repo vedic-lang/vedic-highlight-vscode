@@ -1,0 +1,124 @@
+{
+	"name": "vedic",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings-single"
+		},
+		{
+			"include": "#strings-double"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#keywords-word"
+		},
+		{
+			"include": "#identifiers"
+		},
+		{
+			"include": "#keywords-symbols"
+		},
+		{
+			"include": "#punctuation"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.vedic",
+					"match": "#.*"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.vedic",
+					"match": "[\\u0966-\\u096F]+(\\.[\\u0966-\\u096F]+)?"
+				}
+			]
+		},
+		"strings-single": {
+			"name": "string.vedic",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.vedic",
+					"match": "\\\\+"
+				}
+			]
+		},
+		"strings-double": {
+			"name": "string.vedic",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.vedic",
+					"match": "\\\\+"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.vedic",
+					"match": "(?:सत्य|असत्य|फल|विराम्|यद|यदभावे|अवहन्)(?![\\w$])"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.language.vedic",
+					"match": "(?:मान)(?![\\w$])"
+				}
+			]
+		},
+		"keywords-word": {
+			"patterns": [
+				{
+					"name": "keyword.vedic",
+					"match": "(?:वद्|यदि|अथ|सूत्र|चक्रम्|पर्यन्तम्|निर्देश)(?![\\w$])"
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.vedic",
+					"match": "[\\u0900-\\u097F_$][\\w$]*"
+				}
+			]
+		},
+		"keywords-symbols": {
+			"patterns": [
+				{
+					"name": "keyword.vedic",
+					"match": "`?(?:[+\\-*/%\\^?\\\\=@#<>!]?=|[+\\-*/%\\^\\\\!,;~]|\\|\\||&&|<[>\\-\\\\~]?|><|>|@{1,2}|#{1,2}|\\?{1,2}|[?:]?:)`?(?![+\\-*%<>=!?\\\\#@:|\\^`~,;]|\\/(?:$|[^/])|&&)"
+				}
+			]
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "punctuation.vedic",
+					"match": "[(){}\\[\\]|]"
+				}
+			]
+		}
+	},
+	"scopeName": "source.vedic"
+}
