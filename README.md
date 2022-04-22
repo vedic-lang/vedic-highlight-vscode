@@ -1,19 +1,5 @@
 <p align="center"><a href="https://vedicscript.github.io"><img alt="VedicScript" src="https://raw.githubusercontent.com/vedicscript/vedicscript/HEAD/.github/logo.png" width="300vw"/></a></p>
-<p align="center">
-<a href="https://www.npmjs.com/package/vedicscript"><img src="https://img.shields.io/npm/v/vedicscript.svg?style=flat-square" alt="NPM Version"></a> 
-<a href="https://npmjs.org/package/vedicscript"><img src="https://img.shields.io/npm/dt/vedicscript.svg?style=flat-square" alt="NPM Monthly Downloads"></a> 
-<a href="https://github.com/vedicscript/vedicscript/network/members"><img src="https://img.shields.io/github/forks/vedicscript/vedicscript?style=flat-square" alt="Forks"></a> 
-<a href="https://github.com/vedicscript/vedicscript/"><img src="https://img.shields.io/github/stars/vedicscript/vedicscript?style=flat-square" alt="Stars"></a> 
-<a href="https://github.com/vedicscript/vedicscript/watchers"><img src="https://img.shields.io/github/watchers/vedicscript/vedicscript?style=flat-square" alt="Watches"></a>
-<a href="LICENSE.md"><img src="https://img.shields.io/github/license/vedicscript/vedicscript?style=flat-square" alt="License"></a> 
-<a href="https://vedicscript.github.io"><img src="https://img.shields.io/website/https/vedicscript.github.io.svg?down_message=Down&amp;up_message=Online&amp;style=flat-square" alt="Website Status"></a> 
-<a href="https://github.com/vedicscript/vedicscript/commits/"><img src="https://img.shields.io/github/last-commit/vedicscript/vedicscript?style=flat-square" alt="Last Commit"></a> 
-</p>
-<p align="center">
-	<a href="https://vedicscript.github.io/download">Download</a>·
-	<a href="https://vedicscript.github.io/">Documentation</a>·
-	<a href="https://vedicscript.github.io/vedic-ide">Online Ide</a>
-</p>
+
 <p align="center">
 	<i>Loved the tool? Please consider <a href="https://paypal.me/ptprashanttripathi/10">donating</a> to help it improve!</i><br>
 	<a href="https://paypal.me/PtPrashantTripathi"><img height='23' src="https://img.shields.io/badge/support-PayPal-blue?logo=PayPal&style=flat-square&label=Donate" alt="Donate"/></a>
@@ -22,17 +8,24 @@
 	<a href="https://ptprashanttripathi.github.io/VedicScript?pa=pt1997@ybl&pn=Pt.+Prashant+Tripati" target="_blank"><img src="https://raw.githubusercontent.com/ptprashanttripathi/linkpe/main/img/linkpebadge.png" alt="Support Via UPI" height="23" style="border-radius:1px" /></a>
 </p>
 
-> VedicScript is World first Programming launguage in Sanskrit
-## Vedic Syntax Highlighter 
-Vedic language syntax highlighting for VS Code
+Vedic Syntax Highlighter
+========================
 
-## 📖 Documentation
+## Introduction
 
-VedicScript Documentation are available at [vedicscript.github.io](https://vedicscript.github.io/)
+VedicScript Syntax Highlighter extension for Visual Studio Code (VSCode).
 
-## 👨‍💻 How To Use
+## Installation
 
-Vedic Script is very easy to set up, just follow the [Install Instructions](hhttps://vedicscript.github.io/how-to-use) for your system 
+Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press enter.
+
+```bash
+ext install vedic.vedic-syntax-highlighter
+```
+
+or Just click on the below link and downlode
+
+[https://marketplace.visualstudio.com/items?itemName=vedic.vedic-syntax-highlighter](https://marketplace.visualstudio.com/items?itemName=vedic.vedic-syntax-highlighter)
 
 ## 👤 Author
 
@@ -47,7 +40,7 @@ Vedic Script is very easy to set up, just follow the [Install Instructions](hhtt
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [Contributing Guide](https://github.com/vedicscript/vedicscript/blob/main/CONTRIBUTING.md). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [Contributing Guide](https://github.com/vedic-lang/vedic-highlight-vscode/blob/main/CONTRIBUTING.md). 
 
 ## 👍 Show your support
 
@@ -58,7 +51,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2022 [Pt. Prashant Tripathi](https://github.com/ptprashanttripathi).<br />
-This project is [MIT](https://github.com/vedicscript/vedicscript/blob/main/LICENSE) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 ***
 
