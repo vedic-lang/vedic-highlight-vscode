@@ -1,63 +1,72 @@
 {
-    "name": "vedic-syntax-highlighter",
-    "publisher": "vedic",
-    "displayName": "Vedic Syntax Highlighter",
-    "description": "VedicScript Syntax Highlighter extension for Visual Studio Code (VSCode).",
-    "version": "1.0.2",
-    "engines": {
-        "vscode": "^1.66.0"
-    },
-    "icons": {
-        "default": "./images/icon.png"
-    },
-    "tags": [
-        "vedicscript",
-        "syntax",
-        "highlighter",
-        "code editor",
-        "code",
-        "editor",
-        "vscode",
-        "vscode-extension",
-        "vscode-extensions",
-        "vscode-extension-pack"
-    ],
-    "categories": [
-        "Programming Languages"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vedicscript/vedic-highlight-vscode.git"
-    },
-    "author": {
-        "name": "ptprashanttripathi",
-        "email": "ptprashanttripathi@outlook.com",
-        "url": "https://twitter.com/PtPrashant09"
-    },
-    "license": "MIT",
-    "contributes": {
-        "languages": [
-            {
-                "id": "vedic",
-                "aliases": [
-                    "vedic",
-                    "vedic"
-                ],
-                "extensions": [
-                    ".ved",
-                    ".v",
-                    ".veda",
-                    ".vedic"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "vedic",
-                "scopeName": "source.vedic",
-                "path": "./syntaxes/vedic.tmLanguage.json"
-            }
-        ]
+  "name": "vedic-syntax-highlighter",
+  "publisher": "vedic",
+  "displayName": "Vedic Syntax Highlighter",
+  "description": "vedic Syntax Highlighter extension for Visual Studio Code (VSCode).",
+  "version": "1.0.4",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "icon": "images/logo.png",
+  "homepage": "https://github.com/vedic-lang/vedic-highlight-vscode",
+  "keywords": [
+    "vedic",
+    "syntax",
+    "highlighter",
+    "code editor",
+    "code",
+    "editor",
+    "vscode",
+    "vscode-extension",
+    "vscode-extensions",
+    "vscode-extension-pack"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vedic-lang/vedic-highlight-vscode.git"
+  },
+  "author": {
+    "name": "ptprashanttripathi",
+    "email": "ptprashanttripathi@outlook.com",
+    "url": "https://twitter.com/PtPrashant09"
+  },
+  "preview": false,
+  "capabilities": {
+    "virtualWorkspaces": true,
+    "untrustedWorkspaces": {
+      "supported": true
     }
+  },
+  "galleryBanner": {
+    "color": "#ffdd00"
+  },
+  "license": "MIT",
+  "contributes": {
+    "languages": [
+      {
+        "id": "vedic",
+        "aliases": [
+          "vedic",
+          "vedic"
+        ],
+        "extensions": [
+          ".ved",
+          ".v",
+          ".veda",
+          ".vedic"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vedic",
+        "scopeName": "source.vedic",
+        "path": "./syntaxes/vedic.tmLanguage.json"
+      }
+    ]
+  }
 }
