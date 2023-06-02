@@ -3,9 +3,12 @@
   "publisher": "vedic",
   "displayName": "Vedic Syntax Highlighter",
   "description": "vedic Syntax Highlighter extension for Visual Studio Code (VSCode).",
-  "version": "1.0.4",
+  "version": "2.0.4",
   "engines": {
     "vscode": "^1.66.0"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/vedic-lang"
   },
   "icon": "images/logo.png",
   "homepage": "https://github.com/vedic-lang/vedic-highlight-vscode",
@@ -44,6 +47,7 @@
     "color": "#ffdd00"
   },
   "license": "MIT",
+  "pricing": "Free",
   "contributes": {
     "languages": [
       {
