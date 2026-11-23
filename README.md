@@ -41,12 +41,12 @@ If the CLI is not named `vedic` or is not on `PATH`, set `vedic.executable` in V
 Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press enter.
 
 ```bash
-ext install vedic.vedic-syntax-highlighter
+ext install vedic.vedic
 ```
 
-or Just click on the below link and downlode
+If you have **Vedic Syntax Highlighter** (`vedic.vedic-syntax-highlighter`), disable or uninstall it before enabling **Vedic**. VS Code treats the two Marketplace IDs as separate extensions.
 
-[https://marketplace.visualstudio.com/items?itemName=vedic.vedic-syntax-highlighter](https://marketplace.visualstudio.com/items?itemName=vedic.vedic-syntax-highlighter)
+[Install Vedic from the Marketplace](https://marketplace.visualstudio.com/items?itemName=vedic.vedic)
 
 ## 👤 Author
 
@@ -75,7 +75,7 @@ Pull requests build a VSIX that reviewers can download from the workflow run. To
 | Workflow | `publish.yml` |
 | Environment | `marketplace` |
 
-For each release, merge the intended extension version into `main`. Open **Actions → Publish Vedic to Marketplace → Run workflow**, select `main` and enter the version in `package.json`. The workflow publishes the packaged VSIX to the existing `vedic.vedic-syntax-highlighter` listing using GitHub’s short-lived identity. [Publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#_publish-with-github-actions-and-trusted-publishing)
+For each release, merge the intended extension version into `main`. Open **Actions → Publish Vedic to Marketplace → Run workflow**, select `main` and enter the version in `package.json`. The workflow publishes the packaged VSIX under `vedic.vedic` using GitHub’s short-lived identity. [Publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#_publish-with-github-actions-and-trusted-publishing)
 
 ## 👍 Show your support
 
