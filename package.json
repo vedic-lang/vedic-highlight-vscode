@@ -1,9 +1,13 @@
 {
   "name": "vedic-syntax-highlighter",
   "publisher": "vedic",
-  "displayName": "Vedic Syntax Highlighter",
-  "description": "vedic Syntax Highlighter extension for Visual Studio Code (VSCode).",
-  "version": "2.0.4",
+  "displayName": "Vedic Language Tools",
+  "description": "Vedic syntax highlighting, formatting, and run commands for Visual Studio Code.",
+  "version": "2.1.0",
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:vedic"
+  ],
   "engines": {
     "vscode": "^1.66.0"
   },
@@ -71,6 +75,42 @@
         "scopeName": "source.vedic",
         "path": "./syntaxes/vedic.tmLanguage.json"
       }
-    ]
+    ],
+    "commands": [
+      {
+        "command": "vedic.runFile",
+        "title": "Vedic: Run File",
+        "icon": "$(play)"
+      },
+      {
+        "command": "vedic.formatFile",
+        "title": "Vedic: Format File",
+        "icon": "$(code)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "vedic.runFile",
+          "when": "editorTextFocus && resourceLangId == vedic",
+          "group": "navigation@1"
+        },
+        {
+          "command": "vedic.formatFile",
+          "when": "editorTextFocus && resourceLangId == vedic",
+          "group": "navigation@2"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Vedic",
+      "properties": {
+        "vedic.executable": {
+          "type": "string",
+          "default": "vedic",
+          "description": "Path or command name of the Vedic CLI executable."
+        }
+      }
+    }
   }
 }
