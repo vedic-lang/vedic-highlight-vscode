@@ -4,6 +4,11 @@ All notable changes to the "vedic-syntax-highlighter" extension will be document
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.1.0
+
+- The extension is now called **Vedic**. Existing installations use the same Marketplace ID.
+- Run the current program and format Vedic source from the editor. Formatting requires a Vedic CLI with the `format` command.
+
 ## [Release v1.0.4]
 
 - Initial release

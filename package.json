@@ -1,7 +1,7 @@
 {
   "name": "vedic-syntax-highlighter",
   "publisher": "vedic",
-  "displayName": "Vedic Language Tools",
+  "displayName": "Vedic",
   "description": "Vedic syntax highlighting, formatting, and run commands for Visual Studio Code.",
   "version": "2.1.0",
   "main": "./extension.js",
@@ -15,7 +15,7 @@
     "url": "https://github.com/sponsors/vedic-lang"
   },
   "icon": "images/logo.png",
-  "homepage": "https://github.com/vedic-lang/vedic-highlight-vscode",
+  "homepage": "https://github.com/vedic-lang/vedic-vs-code-extension",
   "keywords": [
     "vedic",
     "syntax",
@@ -33,7 +33,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vedic-lang/vedic-highlight-vscode.git"
+    "url": "git+https://github.com/vedic-lang/vedic-vs-code-extension.git"
   },
   "author": {
     "name": "ptprashanttripathi",
@@ -112,5 +112,8 @@
         }
       }
     }
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.1.1"
   }
 }
