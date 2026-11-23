@@ -1,5 +1,5 @@
 {
-  "name": "vedic-syntax-highlighter",
+  "name": "vedic",
   "publisher": "vedic",
   "displayName": "Vedic",
   "description": "Vedic syntax highlighting, formatting, and run commands for Visual Studio Code.",
