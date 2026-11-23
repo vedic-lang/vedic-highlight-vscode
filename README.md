@@ -20,8 +20,7 @@
     </a>
 </p>
 
-Vedic Language Tools
-========================
+# Vedic
 
 ## Introduction
 
@@ -62,7 +61,21 @@ or Just click on the below link and downlode
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [Contributing Guide](https://github.com/vedic-lang/vedic-highlight-vscode/blob/main/CONTRIBUTING.md). 
+Contributions, issues and feature requests are welcome. [Open an issue](https://github.com/vedic-lang/vedic-vs-code-extension/issues).
+
+## Publishing a release
+
+Pull requests build a VSIX that reviewers can download from the workflow run. To authorize publishing once, open the `vedic` publisher in the [Marketplace dashboard](https://marketplace.visualstudio.com/manage/publishers/vedic) and create a Trusted Publishing policy with these values.
+
+| Field | Value |
+| --- | --- |
+| Policy name | Vedic extension release |
+| Repository owner | `vedic-lang` |
+| Repository | `vedic-vs-code-extension` |
+| Workflow | `publish.yml` |
+| Environment | `marketplace` |
+
+For each release, merge the intended extension version into `main`. Open **Actions → Publish Vedic to Marketplace → Run workflow**, select `main` and enter the version in `package.json`. The workflow publishes the packaged VSIX to the existing `vedic.vedic-syntax-highlighter` listing using GitHub’s short-lived identity. [Publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#_publish-with-github-actions-and-trusted-publishing)
 
 ## 👍 Show your support
 
@@ -73,7 +86,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2022 [Pt. Prashant Tripathi](https://github.com/ptprashanttripathi).<br />
-This project is [MIT](https://github.com/vedic-lang/vedic-highlight-vscode/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/vedic-lang/vedic-vs-code-extension/blob/main/LICENSE) licensed.
 
 ***
 
