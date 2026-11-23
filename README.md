@@ -20,12 +20,22 @@
     </a>
 </p>
 
-Vedic Syntax Highlighter
+Vedic Language Tools
 ========================
 
 ## Introduction
 
-vedic Syntax Highlighter extension for Visual Studio Code (VSCode).
+Vedic language support for Visual Studio Code, including syntax highlighting and editor actions to format and run `.ved` files.
+
+## Requirements and commands
+
+Install the Vedic CLI and make `vedic` available on your `PATH`. Open a `.ved`, `.veda`, or `.vedic` file to see the **Run** and **Format** buttons in the editor title bar.
+
+- **Run** saves the current file and runs it in a Vedic integrated terminal.
+- **Format** applies `vedic format` to the current editor contents. The edit remains in VS Code until you save it.
+- The standard **Format Document** command also uses the Vedic formatter.
+
+If the CLI is not named `vedic` or is not on `PATH`, set `vedic.executable` in VS Code settings to its executable path.
 
 ## Installation
 
