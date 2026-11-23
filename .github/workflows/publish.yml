@@ -1,4 +1,4 @@
-name: Publish Vedic to Marketplace
+name: Publish Vedic Code Formatter to Marketplace
 
 on:
   pull_request:
@@ -38,11 +38,11 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: node --check extension.js
       - name: Build extension
-        run: ./node_modules/.bin/vsce package --out "$RUNNER_TEMP/vedic.vsix"
+        run: ./node_modules/.bin/vsce package --out "$RUNNER_TEMP/vedic-code-formatter.vsix"
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: vedic-vsix
-          path: ${{ runner.temp }}/vedic.vsix
+          name: vedic-code-formatter-vsix
+          path: ${{ runner.temp }}/vedic-code-formatter.vsix
           if-no-files-found: error
 
   publish:
@@ -66,7 +66,7 @@ jobs:
       - run: npm ci --ignore-scripts
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
-          name: vedic-vsix
+          name: vedic-code-formatter-vsix
           path: ${{ runner.temp }}/release
       - name: Publish with Marketplace Trusted Publishing
-        run: ./node_modules/.bin/vsce publish --oidc --packagePath "$RUNNER_TEMP/release/vedic.vsix"
+        run: ./node_modules/.bin/vsce publish --oidc --packagePath "$RUNNER_TEMP/release/vedic-code-formatter.vsix"

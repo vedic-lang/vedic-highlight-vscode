@@ -20,33 +20,33 @@
     </a>
 </p>
 
-# Vedic
+# Vedic Code Formatter
 
-## Introduction
-
-Vedic language support for Visual Studio Code, including syntax highlighting and editor actions to format and run `.ved` files.
-
-## Requirements and commands
-
-Install the Vedic CLI and make `vedic` available on your `PATH`. Open a `.ved`, `.veda`, or `.vedic` file to see the **Run** and **Format** buttons in the editor title bar.
-
-- **Run** saves the current file and runs it in a Vedic integrated terminal.
-- **Format** applies `vedic format` to the current editor contents. The edit remains in VS Code until you save it.
-- The standard **Format Document** command also uses the Vedic formatter.
-
-If the CLI is not named `vedic` or is not on `PATH`, set `vedic.executable` in VS Code settings to its executable path.
+Format a Vedic document or run it from the editor. Install [Vedic CLI 2.1.0 or newer](https://vedic-lang.github.io/download) and make `vedic` available on your `PATH`. You can also set `vedic.executable` to its full path.
 
 ## Installation
 
-Launch VS Code Quick Open (`Ctrl+P`), paste the following command, and press enter.
+Search for **Vedic Code Formatter** in Extensions, or run this command in VS Code Quick Open:
 
-```bash
+```text
 ext install vedic.vedic
 ```
 
-If you have **Vedic Syntax Highlighter** (`vedic.vedic-syntax-highlighter`), disable or uninstall it before enabling **Vedic**. VS Code treats the two Marketplace IDs as separate extensions.
+Existing users of **Vedic** receive the formatter through this listing. For syntax coloring, install [Vedic Code Highlighter](https://marketplace.visualstudio.com/items?itemName=vedic.vedic-syntax-highlighter) alongside it.
 
-[Install Vedic from the Marketplace](https://marketplace.visualstudio.com/items?itemName=vedic.vedic)
+## Using the formatter
+
+Open a local Vedic file in a trusted workspace. Choose **Format** in the editor title bar or run **Format Document**. The edit applies to the current buffer and can be undone before saving. **Run** saves the file and starts the Vedic CLI in the integrated terminal.
+
+To select this formatter for Vedic documents, add the following to your VS Code settings:
+
+```json
+{
+  "[vedic]": {
+    "editor.defaultFormatter": "vedic.vedic"
+  }
+}
+```
 
 ## 👤 Author
 
@@ -61,7 +61,7 @@ If you have **Vedic Syntax Highlighter** (`vedic.vedic-syntax-highlighter`), dis
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome. [Open an issue](https://github.com/vedic-lang/vedic-vs-code-extension/issues).
+Contributions, issues and feature requests are welcome. [Open an issue](https://github.com/vedic-lang/vedic-code-formatter/issues).
 
 ## Publishing a release
 
@@ -69,13 +69,13 @@ Pull requests build a VSIX that reviewers can download from the workflow run. To
 
 | Field | Value |
 | --- | --- |
-| Policy name | Vedic extension release |
+| Policy name | Vedic Code Formatter release |
 | Repository owner | `vedic-lang` |
-| Repository | `vedic-vs-code-extension` |
+| Repository | `vedic-code-formatter` |
 | Workflow | `publish.yml` |
 | Environment | `marketplace` |
 
-For each release, merge the intended extension version into `main`. Open **Actions → Publish Vedic to Marketplace → Run workflow**, select `main` and enter the version in `package.json`. The workflow publishes the packaged VSIX under `vedic.vedic` using GitHub’s short-lived identity. [Publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#_publish-with-github-actions-and-trusted-publishing)
+For each release, merge the intended extension version into `main`. Open **Actions → Publish Vedic Code Formatter to Marketplace → Run workflow**, select `main` and enter the version in `package.json`. The workflow publishes the packaged VSIX under `vedic.vedic` using GitHub’s short-lived identity. [Publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#_publish-with-github-actions-and-trusted-publishing)
 
 ## 👍 Show your support
 
@@ -86,7 +86,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2022 [Pt. Prashant Tripathi](https://github.com/ptprashanttripathi).<br />
-This project is [MIT](https://github.com/vedic-lang/vedic-vs-code-extension/blob/main/LICENSE) licensed.
+See the [project license](https://github.com/vedic-lang/vedic-code-formatter/blob/main/LICENSE).
 
 ***
 

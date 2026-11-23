@@ -1,12 +1,14 @@
 {
   "name": "vedic",
   "publisher": "vedic",
-  "displayName": "Vedic",
-  "description": "Vedic syntax highlighting, formatting, and run commands for Visual Studio Code.",
-  "version": "2.1.0",
+  "displayName": "Vedic Code Formatter",
+  "description": "Format Vedic source and run programs from Visual Studio Code using the Vedic CLI.",
+  "version": "2.1.1",
   "main": "./extension.js",
   "activationEvents": [
-    "onLanguage:vedic"
+    "onLanguage:vedic",
+    "onCommand:vedic.runFile",
+    "onCommand:vedic.formatFile"
   ],
   "engines": {
     "vscode": "^1.66.0"
@@ -15,25 +17,19 @@
     "url": "https://github.com/sponsors/vedic-lang"
   },
   "icon": "images/logo.png",
-  "homepage": "https://github.com/vedic-lang/vedic-vs-code-extension",
+  "homepage": "https://github.com/vedic-lang/vedic-code-formatter",
   "keywords": [
     "vedic",
-    "syntax",
-    "highlighter",
-    "code editor",
-    "code",
-    "editor",
-    "vscode",
-    "vscode-extension",
-    "vscode-extensions",
-    "vscode-extension-pack"
+    "sanskrit",
+    "devanagari",
+    "formatter"
   ],
   "categories": [
-    "Programming Languages"
+    "Formatters"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vedic-lang/vedic-vs-code-extension.git"
+    "url": "git+https://github.com/vedic-lang/vedic-code-formatter.git"
   },
   "author": {
     "name": "ptprashanttripathi",
@@ -42,22 +38,22 @@
   },
   "preview": false,
   "capabilities": {
-    "virtualWorkspaces": true,
+    "virtualWorkspaces": false,
     "untrustedWorkspaces": {
-      "supported": true
+      "supported": false
     }
   },
   "galleryBanner": {
     "color": "#ffdd00"
   },
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "pricing": "Free",
   "contributes": {
     "languages": [
       {
         "id": "vedic",
         "aliases": [
-          "vedic",
+          "Vedic",
           "vedic"
         ],
         "extensions": [
@@ -65,15 +61,7 @@
           ".v",
           ".veda",
           ".vedic"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "vedic",
-        "scopeName": "source.vedic",
-        "path": "./syntaxes/vedic.tmLanguage.json"
+        ]
       }
     ],
     "commands": [
