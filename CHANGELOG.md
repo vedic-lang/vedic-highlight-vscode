@@ -4,9 +4,14 @@ All notable changes to the Vedic extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.1.1
+
+- Rename the extension to Vedic Code Formatter. Its Marketplace ID, formatter settings, and Run command stay the same.
+- Move syntax coloring and bracket configuration to the companion Vedic Code Highlighter extension.
+
 ## 2.1.0
 
-- Install **Vedic** under its new Marketplace ID `vedic.vedic`. Users of `vedic.vedic-syntax-highlighter` can switch by installing Vedic and disabling the old extension.
+- Install **Vedic** under its new Marketplace ID `vedic.vedic`.
 - Run the current program and format Vedic source from the editor. Formatting requires a Vedic CLI with the `format` command.
 
 ## [Release v1.0.4]
