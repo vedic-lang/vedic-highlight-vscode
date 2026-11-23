@@ -4,6 +4,10 @@ All notable changes to the Vedic extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.1.2
+
+- Use the new violet Vedic wordmark as the extension icon.
+
 ## 2.1.1
 
 - Rename the extension to Vedic Code Formatter. Its Marketplace ID, formatter settings, and Run command stay the same.

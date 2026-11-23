@@ -3,7 +3,7 @@
   "publisher": "vedic",
   "displayName": "Vedic Code Formatter",
   "description": "Format Vedic source and run programs from Visual Studio Code using the Vedic CLI.",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "./extension.js",
   "activationEvents": [
     "onLanguage:vedic",
